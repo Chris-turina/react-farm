@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 
 function SmallHeader(){
   const styles = {
@@ -14,8 +15,11 @@ function SmallHeader(){
     }
   }
   return(
-    <div style={styles.containerStyle}>
-      <h3 style={styles.smallHeaderTextStyle}>Produce by Month</h3>
+    // <div style={styles.containerStyle}>
+    //   <h3 style={styles.smallHeaderTextStyle}>Produce by Month</h3>
+    // </div>
+    <div>
+
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import MonthCard from './MonthCard';
 import MonthCardFoodList from './MonthCardFoodList';
+// import { Link } from 'react-router-dom';
 
 const availableProduce = [
    {
@@ -271,7 +272,7 @@ const availableProduce = [
    }
 ];
 
-function MonthList(){
+function MonthList(props){
 
 const styles= {
   containerStyle: {

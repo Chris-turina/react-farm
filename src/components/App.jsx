@@ -3,6 +3,9 @@ import Header from './Header';
 import DayList from './DayList';
 import SmallHeader from './SmallHeader';
 import MonthList from './MonthList';
+import { Switch, Route } from 'react-router-dom';
+
+
 
 
 function App(){
@@ -15,9 +18,11 @@ function App(){
   return(
     <div style={styles.containerStyle}>
       <Header />
-      <DayList />
-      <SmallHeader />
-      <MonthList />
+      <Switch>
+        <Route exact path='/' component={DayList} />
+        <Route path='/monthlist' component={MonthList} />
+      </Switch>
+  
     </div>
   );
 }
